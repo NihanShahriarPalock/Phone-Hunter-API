@@ -12,23 +12,30 @@
 <body>
     <header>
 
-        <h2 class="font-extrabold text-center text-6xl my-5">Phone Hunter</h2>
+        <h2 class="font-extrabold text-center text-6xl my-8">Search your phone</h2>
 
-     
+
 
     </header>
     <main>
 
         <section class="search-phone flex  justify-center">
 
-    <label class="input input-bordered flex items-center  w-1/2">
-        <input id="search-field" type="text" class="grow" placeholder="Search" />
-        <button onclick="searchPhone()" class="btn btn-primary -mr-4 text-white font-bold text-xl">Search</button>
-    </label>
+            <label class="input input-bordered flex items-center  w-1/2">
+                <input id="search-field" type="text" class="grow" placeholder="Search" />
+                <button onclick="searchPhone()"
+                    class="btn btn-primary -mr-4 text-white font-bold text-xl">Search</button>
+            </label>
 
         </section>
 
         <section>
+
+            <div class="flex justify-center items-center">
+                <span id="loading-spinner" class="loading loading-bars loading-lg hidden mt-40"></span>
+             
+            </div>
+
             <div id="phone-container" class=" mt-8 mx-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                 <!-- <div class="card w-96 bg-gray-300 shadow-xl">
                     <figure class="px-10 pt-10">
@@ -43,6 +50,10 @@
                         </div>
                     </div>
                 </div> -->
+            </div>
+
+            <div class="flex justify-center text-white my-16 ">
+                <button id="show-All-Container" class="hidden btn btn-primary">Show More result</button>
             </div>
         </section>
 
