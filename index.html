@@ -14,16 +14,23 @@
 
         <h2 class="font-extrabold text-center text-6xl my-5">Phone Hunter</h2>
 
-        <input class="border-orange-600 outline-orange-950" type="search" placeholder="vekvd" name="" id="" kjl/>
-    <input type="text" placeholder="Search..."
-        class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-0 focus:border-blue-500" />
+     
 
     </header>
     <main>
 
+        <section class="search-phone flex  justify-center">
+
+    <label class="input input-bordered flex items-center  w-1/2">
+        <input id="search-field" type="text" class="grow" placeholder="Search" />
+        <button onclick="searchPhone()" class="btn btn-primary -mr-4 text-white font-bold text-xl">Search</button>
+    </label>
+
+        </section>
+
         <section>
-            <div id="phone-container">
-                <div class="card w-96 bg-gray-300 shadow-xl">
+            <div id="phone-container" class=" mt-8 mx-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- <div class="card w-96 bg-gray-300 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
                             class="rounded-xl" />
@@ -35,7 +42,7 @@
                             <button class="btn btn-primary">View Details</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
