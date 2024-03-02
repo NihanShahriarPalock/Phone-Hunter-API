@@ -52,9 +52,30 @@
                 </div> -->
             </div>
 
-            <div class="flex justify-center text-white my-16 ">
-                <button id="show-All-Container" class="hidden btn btn-primary">Show More result</button>
+            <div class=" text-white my-16 text-center ">
+                <button onclick="showAllPhone()" id="show-All-Container" class="hidden btn btn-primary ">Show More result</button>
             </div>
+
+            <!-- Modal or Phone Details -->
+            <!-- Open the modal using ID.showModal() method -->
+           
+            <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box  ">
+                    
+                    <h3 id="modal-phone-name" class="font-bold text-lg"></h3>
+                   <div id="modal-details-container">
+                
+                   
+
+                   </div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
 
     </main>
